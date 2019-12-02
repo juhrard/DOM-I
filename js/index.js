@@ -39,4 +39,61 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+let headerNav = document.querySelectorAll('a');
+// headerNav.forEach(item => {
+//   let i = 1;
+//   return item.textContent = siteContent["nav"][`nav-item-${i}`];
+
+//   })
+headerNav[0].textContent = siteContent["nav"][`nav-item-1`];
+headerNav[1].textContent = siteContent["nav"][`nav-item-2`];
+headerNav[2].textContent = siteContent["nav"][`nav-item-3`];
+headerNav[3].textContent = siteContent["nav"][`nav-item-4`];
+headerNav[4].textContent = siteContent["nav"][`nav-item-5`];
+headerNav[5].textContent = siteContent["nav"][`nav-item-6`];
+
+//Header Variables
+
+let headerH1 = document.querySelector(".cta-text h1");
+headerH1.textContent = siteContent["cta"]["h1"];
+
+let headerButton = document.querySelector(".cta-text button");
+headerButton.textContent = siteContent["cta"]["button"];
+
+let headerImg = document.querySelector(".cta img")
+headerImg.setAttribute('src', siteContent["cta"]["img-src"])
+
+//Center Variables
+
+let h4Text = document.querySelectorAll('h4');
+
+h4Text[0].textContent = siteContent["main-content"]["features-h4"]
+h4Text[1].textContent = siteContent["main-content"]["about-h4"]
+h4Text[2].textContent = siteContent["main-content"]["services-h4"]
+h4Text[3].textContent = siteContent["main-content"]["product-h4"]
+h4Text[4].textContent = siteContent["main-content"]["vision-h4"]
+
+let h4Content = document.querySelectorAll('p');
+
+h4Content[0].textContent = siteContent["main-content"]["features-content"];
+h4Content[1].textContent = siteContent["main-content"]["about-content"];
+h4Content[2].textContent = siteContent["main-content"]["services-content"];
+h4Content[3].textContent = siteContent["main-content"]["product-content"];
+h4Content[4].textContent = siteContent["main-content"]["vision-content"];
+
+let middleImg = document.getElementById('middle-img');
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+//Contact Variables
+
+h4Text[5].textContent = siteContent["contact"]["contact-h4"];
+
+h4Content[5].textContent = siteContent["contact"]["address"];
+h4Content[6].textContent = siteContent["contact"]["phone"];
+h4Content[7].textContent = siteContent["contact"]["email"];
+
+//Footer Variables
+
+h4Content[8].textContent = siteContent["footer"]["copyright"];
